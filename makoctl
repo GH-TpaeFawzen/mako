@@ -41,7 +41,7 @@ case "$1" in ("dismiss")
 	all=0
 	group=0
 	id=0
-	while (exit $(($# > 1)) ); do
+	while (exit $(($# < 2)) ); do
 		case "$2" in ("-a"|"--all")
 			all=1
 		;;("-g"|"--group")
